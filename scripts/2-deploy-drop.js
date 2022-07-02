@@ -6,7 +6,7 @@ import { readFileSync } from "fs";
   try {
     const editionDropAddress = await sdk.deployer.deployEditionDrop({
       // The collection's name, ex. CryptoPunks
-      name: "KipDAO Membership",
+      name: "HillaDAO Membership",
       // A description for the collection.
       description: "A DAO for fans of Hillary.",
       // The image that will be held on our NFT! The fun part :).

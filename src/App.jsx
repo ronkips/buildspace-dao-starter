@@ -1,10 +1,12 @@
-import { useAddress, useMetamask, useEditionDrop, useToken, useVote } from '@thirdweb-dev/react';
+import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork } from '@thirdweb-dev/react';
+import { ChainId } from '@thirdweb-dev/sdk'
 import { useState, useEffect, useMemo } from 'react';
 import { AddressZero } from "@ethersproject/constants";
- 
+
 const App = () => {
   // Use the hooks thirdweb give us.
   const address = useAddress();
+  const network = useNetwork();
   const connectWithMetamask = useMetamask();
   console.log("👋 Address:", address);
 
@@ -176,7 +178,7 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
+        <h1>Welcome to KipDAO</h1>
         <button onClick={connectWithMetamask} className="btn-hero">
           Connect your wallet
         </button>
@@ -357,7 +359,7 @@ const App = () => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1>Mint your free 🍪DAO Membership NFT</h1>
+      <h1>Mint your free 🍪KipDAO Membership NFT</h1>
       <button
         disabled={isClaiming}
         onClick={mintNft}
