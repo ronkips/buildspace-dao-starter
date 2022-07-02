@@ -1,10 +1,10 @@
 import sdk from "./1-initialize-sdk.js";
 
 // This is the address to our ERC-1155 membership NFT contract.
-const editionDrop = sdk.getEditionDrop("0x73938eFe4c0FFF87fF4DF1fDD1b204177992bFB4");
+const editionDrop = sdk.getEditionDrop("0x00fDF4fc124B6704339619abf71e5117c635B91A");
 
 // This is the address to our ERC-20 token contract.
-const token = sdk.getToken("0x84D4d101f8d4F553784660afcB1A08771B7819e8");
+const token = sdk.getToken("0xFaD5a4704E054e97773DEEf48949D27A36406Af8");
 (async () => {
     try {
       // Grab all the addresses of people who own our membership NFT, 

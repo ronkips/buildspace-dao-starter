@@ -8,7 +8,7 @@ import sdk from "./1-initialize-sdk.js";
         // What's your token's name? Ex. "Ethereum"
         name: "KipDAO Governance Token",
         // What's your token's symbol? Ex. "ETH"
-        symbol: "KIP",
+        symbol: "HILLA",
         // This will be in case we want to sell our token,
         // because we don't, we set it to AddressZero again.
         primary_sale_recipient: AddressZero,

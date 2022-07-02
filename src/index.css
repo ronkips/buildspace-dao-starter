@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: yellow;
+  background-color: purple;
   color: black;
   overflow-x: hidden;
 }
@@ -93,7 +93,7 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: yellow;
+  color: purple;
 }
 
 .member-page form .card > div {
